@@ -23,7 +23,7 @@ public class MineFragment extends BaseFragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.recyclerview, container, false);
+        View view = inflater.inflate(R.layout.fragment_mine, container, false);
         return view;
     }
 
