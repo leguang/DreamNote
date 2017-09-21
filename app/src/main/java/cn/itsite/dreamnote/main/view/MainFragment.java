@@ -18,10 +18,11 @@ import butterknife.Unbinder;
 import cn.itsite.abase.mvp.view.base.BaseFragment;
 import cn.itsite.dreamnote.App;
 import cn.itsite.dreamnote.R;
+import cn.itsite.dreamnote.mine.MineFragment;
 import cn.itsite.dreamnote.note.NoteFragment;
 import me.yokeyword.fragmentation.SupportFragment;
 
-import static cn.itsite.dreamnote.common.Constants.KEY_CURR_POSITION;
+import static cn.itsite.dreamnote.common.Constants.KEY_POSITION;
 
 /**
  * Author：leguang on 2016/10/9 0009 15:49
@@ -48,12 +49,12 @@ public class MainFragment extends BaseFragment {
         if (savedInstanceState == null) {
             mFragments[0] = NoteFragment.newInstance();
             mFragments[1] = NoteFragment.newInstance();
-            mFragments[2] = NoteFragment.newInstance();
+            mFragments[2] = MineFragment.newInstance();
             loadMultipleRootFragment(R.id.fl_container_main_fragment, 0, mFragments[0], mFragments[2]);
         } else {
             mFragments[0] = NoteFragment.newInstance();
             mFragments[1] = NoteFragment.newInstance();
-            mFragments[2] = NoteFragment.newInstance();
+            mFragments[2] = MineFragment.newInstance();
         }
         return view;
     }
@@ -86,6 +87,6 @@ public class MainFragment extends BaseFragment {
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putInt(KEY_CURR_POSITION, prePosition);
+        outState.putInt(KEY_POSITION, prePosition);
     }
 }
