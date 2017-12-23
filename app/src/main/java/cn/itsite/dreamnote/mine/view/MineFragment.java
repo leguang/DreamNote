@@ -1,4 +1,4 @@
-package cn.itsite.dreamnote.mine;
+package cn.itsite.dreamnote.mine.view;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

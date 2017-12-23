@@ -18,7 +18,7 @@ import butterknife.Unbinder;
 import cn.itsite.abase.mvp.view.base.BaseFragment;
 import cn.itsite.dreamnote.App;
 import cn.itsite.dreamnote.R;
-import cn.itsite.dreamnote.mine.MineFragment;
+import cn.itsite.dreamnote.mine.view.MineFragment;
 import cn.itsite.dreamnote.note.NoteFragment;
 import me.yokeyword.fragmentation.SupportFragment;
 
